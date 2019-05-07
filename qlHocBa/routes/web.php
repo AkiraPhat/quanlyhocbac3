@@ -21,7 +21,15 @@ Route::group(['prefix'=>'admin'],function(){
         Route::get('danhsach','HsDiemController@getDanhSach');
     });
     Route::group(['prefix'=>'students'],function(){
-        Route::get('danhsach','HocSinhController@getDanhSach');
+        Route::get('danhsach','HocSinhController@getDanhSach')->name('dsstudent');
+        Route::get('them', 'HocSinhController@getThem'); 
+        Route::post('them', 'HocSinhController@postThem'); 
+        Route::get('xoa/{id}','HocSinhController@getXoa')->name('xoastudent');
+    });
+    Route::group(['prefix'=>'comment'],function(){
+        Route::get('danhsach','CommentController@getDanhSach');
+        Route::get('them', 'HocSinhController@getThem'); 
+        Route::post('spostThem', 'HocSinhController@postThem')->name('pthem'); 
     });
     Route::group(['prefix'=>'users'],function(){
         Route::get('danhsach','UserController@getDanhSach');

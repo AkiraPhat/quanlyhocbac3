@@ -15,6 +15,8 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!-- begin::Head -->
 	<head>
 		<meta charset="utf-8" />
+
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<title>
 			THPT Xuân Trường C
 		</title>
@@ -82,6 +84,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		@include('sub.admin.js')
 		@yield('js')
 		<!-- end::CSS -->
+		
 	</body>
 	<!-- end::Body -->
 </html>

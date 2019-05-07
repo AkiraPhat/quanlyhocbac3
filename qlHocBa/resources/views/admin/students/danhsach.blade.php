@@ -36,8 +36,8 @@
                                 <td>{{$st->gioitinh}}</td>
                                 <td>{{$st->dantoc}}</td>
                                 <td>{{$st->quequan}}</td>
-                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/theloai/xoa/{{$st->id}}"> Delete</a></td>
-                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/theloai/sua/{{$st->id}}">Edit</a></td>
+                                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="{{ route('xoastudent',@$st->id) }}"> Delete</a></td>
+                                <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/students/sua/{{$st->id}}">Edit</a></td>
                             </tr>
                             @endforeach
                         </tbody>
@@ -52,5 +52,5 @@
 @endsection
 
 @section('js')
-	<script type="text/javascript" src="{{asset('js/practicerooms/validation.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/students/validation.js')}}"></script>
 @endsection

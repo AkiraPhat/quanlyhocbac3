@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Kết quả học tập                            
+                        <h1 class="page-header">Kết quả học tập                         
                         </h1>
                         <small>Năm học 2015-2016</small>
                     </div>
@@ -20,10 +20,10 @@
                         <thead>
                             <tr align="center">
                                 <th>ID</th>
-                                <th>Mã HS</th>
-                                <th>Mã Giáo viên</th>
-                                <th>Mã môn</th>
-                                <th>Mã bài kiểm tra</th>
+                                <th>Tên HS</th>
+                                <th>Tên Giáo viên</th>
+                                <th>Tên môn</th>
+                                <th>Loại bài kiểm tra</th>
                                 <th>Điểm</th>
                                 <th>Delete</th>
                                 <th>Edit</th>
@@ -33,10 +33,10 @@
                             @foreach($studyresult as $st)
                             <tr class="odd gradeX" align="center">
                                 <td>{{$st->id}}</td>
-                                <td>{{$st->mahs}}</td>
-                                <td>{{$st->magv}}</td>
-                                <td>{{$st->mamon}}</td>
-                                <td>{{$st->mabaikt}}</td>
+                                <td>{{$st->tenhs}}</td>
+                                <td>{{$st->tengv}}</td>
+                                <td>{{$st->tenmon}}</td>
+                                <td>{{$st->loaibaikt}}</td>
                                 <td>{{$st->diem}}</td>
                                 <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/theloai/xoa/{{$st->id}}"> Delete</a></td>
                                 <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/theloai/sua/{{$st->id}}">Edit</a></td>

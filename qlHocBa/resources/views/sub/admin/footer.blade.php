@@ -5,7 +5,7 @@
 				<span class="m-footer__copyright">
 					2018 &copy; Libray theme by
 					<a href="https://keenthemes.com" class="m-link">
-						Akira Phat
+						Nguyễn Phát
 					</a>
 				</span>
 			</div>

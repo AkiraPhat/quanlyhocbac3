@@ -20,12 +20,12 @@ m-menu-scrollable="0" m-menu-dropdown-timeout="500"
 			</a>
 		</li>
 		
-		<li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
+		<!-- <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
 		 	<a href="" class="m-menu__link ">
 		 		<i class="m-menu__link-icon la la-comments-o"></i>
 		 		<span class="m-menu__link-text"> Chia sẻ thông tin </span> 
 		 	</a>
-		 </li>	
+		 </li>	 -->
 		<li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
 			<a  href="profile.html" class="m-menu__link ">
 				<i class="m-menu__link-icon la la-user-plus"></i>
@@ -64,16 +64,16 @@ m-menu-scrollable="0" m-menu-dropdown-timeout="500"
 				</span>
 			</a>
 		</li>
-		<li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
+		<!-- <li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
 			<a  href="" class="m-menu__link ">
 				<i class="m-menu__link-icon flaticon-network"></i>
 				<span class="m-menu__link-text">
 					Môn học
 				</span>
 			</a>
-		</li>
+		</li> -->
 		<li class="m-menu__item " aria-haspopup="true"  m-menu-link-redirect="1">
-			<a  href="" class="m-menu__link ">
+			<a  href="admin/comment/danhsach" class="m-menu__link ">
 				<i class="m-menu__link-icon la la-bar-chart"></i>
 				<span class="m-menu__link-text">
 					Đánh giá rèn luyện 
